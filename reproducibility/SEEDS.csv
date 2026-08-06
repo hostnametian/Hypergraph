@@ -1,0 +1,9 @@
+stage,seed_base,seed_offsets_or_rule
+random_disruption,42,"R1=11; R2=13; R3=17; R4=29; R5=31; R6=37; R7=47; city index x 1000"
+targeted_disruption,42,"city index x 1000; source sampling offset +977"
+route_support_cascade,42,"C1-C3=11; C4=29; C5=47; repetition x 100003; fraction x 10000"
+recovery,42,"node damage repetition x 100003 + 7; transfer damage + 11; source sampling +977"
+cross_mode_R3,271828,"city hash offset; 20 repetitions; 11 fractions"
+bootstrap_primary,20260807,"5,000 city-level resamples"
+bootstrap_lasso,20260807,"2,000 city-level resamples; LASSO random_state=1000+b"
+Moran_permutation,42,"999 permutations"

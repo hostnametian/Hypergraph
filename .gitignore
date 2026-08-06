@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+CPTOND-2025/
+results_*/
+MDPI/
+*.pdf
+*.aux
+*.log
+*.out

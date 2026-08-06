@@ -1,0 +1,15 @@
+name: transit-hypergraph-repro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - networkx
+  - geopandas
+  - shapely
+  - pyproj
+  - python-docx

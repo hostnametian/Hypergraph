@@ -1,0 +1,9 @@
+item,source_script_or_input,principal_output
+Tables S1-S4,run_phase7_clustering.py,results_phase7_clustering/*.csv
+Figures 1-7,run_phase7_clustering.py and generate_gap_figures.py,MDPI/Fig*.png
+Figures 8-13,phase-specific analysis scripts,MDPI/Fig*.png
+Tables S18-S19,MDPI/regenerate_sensitivity_figures.py,results_revision/cascade_sensitivity/*.csv
+Table S20,run_lspace_reconstruction_check.py,results_lspace_reconstruction/*.csv
+Table S21,run_cross_mode_r3.py,results_revision/cross_mode_r3/*.csv
+Tables S22-S24,run_reviewer1_comment5_stats.py,results_revision/statistical_uncertainty/*.csv
+Table S25,run_phase7_clustering.py and freeze audit,results_phase7_clustering/representatives.csv
