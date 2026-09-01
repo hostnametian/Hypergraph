@@ -3,7 +3,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$REPO_ROOT"
-# Lightweight reviewer check: verify imports, manifest, and the statistical re-analysis.
+# Lightweight release check: verify imports, metadata, and Python syntax.
 PYTHON_BIN="${PYTHON:-python3}"
 "$PYTHON_BIN" - <<'PY'
 import numpy, pandas, scipy, sklearn

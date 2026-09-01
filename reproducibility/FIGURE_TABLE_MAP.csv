@@ -1,9 +1,17 @@
-item,source_script_or_input,principal_output
-Tables S1-S4,run_phase7_clustering.py,results_phase7_clustering/*.csv
-Figures 1-7,run_phase7_clustering.py and generate_gap_figures.py,MDPI/Fig*.png
-Figures 8-13,phase-specific analysis scripts,MDPI/Fig*.png
-Tables S18-S19,MDPI/regenerate_sensitivity_figures.py,results_revision/cascade_sensitivity/*.csv
-Table S20,run_lspace_reconstruction_check.py,results_lspace_reconstruction/*.csv
-Table S21,run_cross_mode_r3.py,results_revision/cross_mode_r3/*.csv
-Tables S22-S24,run_reviewer1_comment5_stats.py,results_revision/statistical_uncertainty/*.csv
-Table S25,run_phase7_clustering.py and freeze audit,results_phase7_clustering/representatives.csv
+analysis_or_final_item,source_script,principal_generated_output
+Network construction and transfer audit,scripts/build_transit_hypergraphs.py,results_build_transit_hypergraphs/<version>/<city>/*.csv
+Structural descriptors,scripts/analyze_transit_hypergraphs.py,results_analyze_transit_hypergraphs/<version>/*.csv
+Higher-order metrics,scripts/compute_higher_order_metrics.py,results_higher_order_metrics/city_higher_order_metrics.csv
+Random-disruption results,scripts/run_resilience_experiments.py,results_run_resilience_experiments/<version>/*.csv
+Targeted-disruption results,scripts/run_resilience_targeted.py,results_run_resilience_targeted/<version>/*.csv
+Route-support cascade results,scripts/run_resilience_cascade.py,results_run_resilience_cascade/<version>/*.csv
+Recovery results,scripts/run_resilience_recovery.py,results_run_resilience_recovery/<version>/*.csv
+Clustering and Supplementary Tables S1--S4,scripts/run_phase7_clustering.py,results_phase7_clustering/*.csv
+P-space comparison and Supplementary Figure S2,scripts/run_pspace_comparison.py,results_pspace_comparison/*.csv
+Representation diagnostics,scripts/run_representation_comparison.py,results_representation_comparison/*.csv
+Supplementary Table S18,scripts/run_lspace_reconstruction_check.py,results_lspace_reconstruction/*.csv
+Supplementary Table S19,scripts/run_cross_mode_r3.py,results_revision/cross_mode_r3/*.csv
+Supplementary Table S14,scripts/run_morans_i.py,results_morans_i/*.csv
+Supplementary Tables S20--S23,scripts/run_reviewer1_comment5_stats.py,results_revision/statistical_uncertainty/*.csv
+Supplementary Figures S4 and S8,scripts/generate_gap_figures.py,generated figure files
+Phase-transition analysis,scripts/run_phase_transition_analysis.py,results_phase_transition_analysis/*.csv

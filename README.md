@@ -1,26 +1,37 @@
 # Route-Preserving Multimodal Transit Hypergraphs
 
-Anonymous code release accompanying the manuscript. This repository contains only the
-manuscript-related analysis code and lightweight metadata; raw CPTOND-2025 files,
-intermediate networks, simulation outputs, manuscript PDFs, and personal workspace files
-are intentionally excluded.
+Public reproducibility repository accompanying the article “Contrasting Resilience
+Diagnostics in Route-Preserving Multimodal Transit Hypergraphs”. This repository contains
+the manuscript-related analysis code and lightweight metadata. Raw CPTOND-2025 files,
+intermediate networks, simulation outputs, journal artwork, manuscript PDFs, and personal
+workspace files are intentionally excluded.
 
 ## Layout
 
 - `scripts/`: network construction, attacks, cascades, recovery, representation checks,
-  clustering, and reviewer-requested statistical analyses.
-- `metadata/`: 45-city inventory with repository-relative CPTOND-2025 paths.
-- `reproducibility/`: environment, data-version, seed, transfer-audit and workflow records.
+  clustering, and statistical analyses.
+- `metadata/`: the 45-city inventory with repository-relative CPTOND-2025 paths.
+- `reproducibility/`: environment, data-version, seed, transfer-matching, workflow, and
+  analysis-to-output records.
 
-All paths are repository-relative. Place the public CPTOND-2025 archive at
-`CPTOND-2025/` in the repository root, then follow `reproducibility/WORKFLOW.md`.
-Create the environment with:
+## Quick start
+
+Clone the repository, place the public CPTOND-2025 archive in `CPTOND-2025/` at the
+repository root, and follow `reproducibility/WORKFLOW.md`.
 
 ```bash
+git clone https://github.com/hostnametian/Hypergraph.git
+cd Hypergraph
 conda env create -f reproducibility/environment.yml
 conda activate transit-hypergraph-repro
-cd github
 bash reproducibility/run_smoke_test.sh
 ```
 
-The raw data are available from the public DOI stated in `reproducibility/DATA_VERSION.md`.
+The source data release is identified in `reproducibility/DATA_VERSION.md`. Derived node,
+route, transfer, simulation, and summary tables are generated locally by the workflow and
+are not tracked in this repository.
+
+## License
+
+The original code and repository documentation are released under the MIT License; see
+`LICENSE`. CPTOND-2025 remains subject to the license stated by its data publisher.
